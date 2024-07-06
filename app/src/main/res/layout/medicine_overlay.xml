@@ -1,0 +1,39 @@
+<!-- medicine_overlay.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obat berhasil dikirim!"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnCloseOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tutup"
+                android:background="@android:drawable/btn_default"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:onClick="closeOverlay"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
